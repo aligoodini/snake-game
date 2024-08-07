@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>snake game (made by devGodin)</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 95vh; */
+      }
+      canvas {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="my-canvas" width="280" height="500"></canvas>
+
+    <div
+      class="container"
+      style="
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="arr-top" style="position: absolute">
+        <i
+          class="far fa-arrow-alt-circle-up"
+          style="font-size: 48px; color: red"
+        ></i>
+      </div>
+      <div class="arr-right" style="position: absolute; top: 30px; left: 50px">
+        <i
+          class="far fa-arrow-alt-circle-right"
+          style="font-size: 48px; color: red"
+        ></i>
+      </div>
+      <div class="arr-bottom" style="position: absolute; top: 90px">
+        <i
+          class="far fa-arrow-alt-circle-down"
+          style="font-size: 48px; color: red"
+        ></i>
+      </div>
+      <div class="arr-left" style="position: absolute; top: 30px; right: 50px">
+        <i
+          class="far fa-arrow-alt-circle-left"
+          style="font-size: 48px; color: red"
+        ></i>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
